@@ -14,9 +14,7 @@ import android.widget.TextView;
  */
 
 public class MyDialogFragment extends DialogFragment
-{    private OnAddFriendListener callback;
-
-    //private View pic;
+{
 
     public MyDialogFragment()
     {
