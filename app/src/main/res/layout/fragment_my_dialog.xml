@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calendarView"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="281dp"
+            android:layout_height="64dp">
+
+            <Button
+                android:text="Aujourd hui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:background = "@drawable/roundedbutton"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:textSize="12sp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:text="Demain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:background = "@drawable/roundedbutton"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:fontFamily="monospace" />
+
+            <Button
+                android:text="@string/ce_weekend"
+                android:layout_width="wrap_content"
+                android:id="@+id/button3"
+                android:background = "@drawable/roundedbutton"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="monospace"
+                android:textSize="12sp"
+                android:capitalize="none"
+                android:drawableLeft="@color/colorPrimary"
+                android:elevation="14dp"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
